@@ -1,0 +1,63 @@
+body {
+background-color: rgb(29, 170, 55);
+font-family: 'Frankin Gothic Medium','Arial Narrow', arial, sans-serif;
+display:flex;
+justify-content:center;
+height: 100vh;
+margin:0;
+}
+
+
+.card {
+background-color: rgb(166, 196, 152);
+border-radius: 12px;
+box-shadow: 0 4px 12px rgb(6, 143, 61);
+padding: 30px;
+max-width: 400px;
+text-align: center;
+}
+
+.card img {
+border-radius: 50%;
+width:80px;
+height:80px;
+object-fit: cover;
+margin-bottom: 20px;
+}
+
+.card h1 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #16660a;
+}
+
+.card h2 {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #0e5c08;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+  padding:0;
+  margin-bottom: 20px;
+}
+
+.card ul li {
+  background-color:#ffffff;
+  margin: 5px 0;
+  padding:8px;
+  border-radius: 20px;
+}
+
+.card a {
+ text-decoration: none;
+ color: #0ea13f;
+ font-weight: bold;
+}
