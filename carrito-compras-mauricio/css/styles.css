@@ -1,0 +1,31 @@
+:root {
+     --cream: #3f318e;
+      --paper: hsl(36, 2%, 40%);
+      --ink: #2d5b88;
+      --muted: #5457a0;
+      --coral: #1d2061;
+      --coral-dark: #33226e;
+      --butter: #727067;
+      --sage: #265477;
+      --sage-dark: #4c4387;
+      --line: #eadfd2;
+}
+
+* { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+.body {
+      margin: 0;
+      width: 100%;
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      overflow-x: hidden;
+      background-color: var(--ink)
+    }
+
+     .title-font { font-family: "Fraunces", serif; }
+    .paper-texture {
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(245,214,111,.23) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 88% 32%, rgba(120,148,116,.12) 0 1px, transparent 1.5px);
+      background-size: 18px 18px, 23px 23px;
+    }
