@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head> <!--aqui viene los metadatos y la conexión al style.css-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mauricio Jaime">
+    <meta name="description" content="Es un diseño de un carito de compras para dispositivos usados">
+    <meta name="keywords" content="telefonos, usados, menor precio, laptops">
+
+    <!--es el titulo de la pagina web-->
+
+    <title>Carrito de compras - ReBoot</title>
+
+    <!--enlaza con la hoja de estilos-->
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+
+</head>
+<body class="paper-texture">
+
+<!--================================encabezado=====================================-->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#inicio" class="logo">
+        <span class="logo-icon">📱</span>
+        Reboot
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#contacto">Ubicaciones</a></li>
+        </ul>
+        <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Dulce Detalle.')">
+          <i data-lucide="message-circle"></i> Pedir ahora
+        </button>
+      </nav>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+    </div>
+
+    <nav id="mobile-menu" class="mobile-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#contacto">Ubicaciones</a></li>
+        </ul>
+         <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Reboot.')">
+        <i data-lucide="message-circle"></i> Pedir ahora
+      </button>
+    </nav>
+</header>
+
+<main>
+ <!-- ================= HERO ================= -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Tecnología que merece otra oportunidad</p>
+          <h1>Tu proximo celular esta en ReBoot</h1>
+          <p class="lead">Encuentra celulares seminuevos a precios increíbles. Renueva tu tecnología sin gastar demas.</p>
+          <div class="hero-actions">
+            <a href="#productos" class="btn primary">Ver productos</a>
+            <button type="button" class="btn outline" onclick="openWhatsApp('Hola, vi su página y me gustaría conocer sus regalos personalizados.')">Comprar por WhatsApp</button>
+          </div>
+          <p class="trust"><i data-lucide="heart"></i> Dale una segunda oportunidad a la tecnología</p>
+        </div>
+        <div class="hero-image reveal">
+          <img src="img/Introduccíon.avif" alt="Caja de regalo artesanal con velas aromáticas, flores secas y empaque cálido.">
+          <span class="tag tag-love">Tecnologia renovada</span>
+          <span class="tag tag-custom">Precios accesibles</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTOS ================= -->
+    <section id="productos" class="products">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Reutilizado y barato</p>
+          <h2>Conoce nuestros dispositivos</h2>
+          <p class="lead">Elige uno y estrenalo ahora con la mejor calidad.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card reveal">
+            <img src="img/Producto 1.avif" alt="Caja de regalo rosa con listón y chocolates gourmet.">
+            <div class="product-body">
+              <span class="tag">celular</span>
+              <h3>seminuevo android</h3>
+              <p class="price">$5,299 MXN</p>
+              <p class="description">Celular android reutilizado 2020.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-caja')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/producto 2.avif" alt="Velas artesanales en frascos de vidrio ámbar.">
+            <div class="product-body">
+              <span class="tag">celular</span>
+              <h3>Iphone 14 pro reutilizado</h3>
+              <p class="price">$9,999 MXN</p>
+              <p class="description">Iphone 14 pro seminuevo del 2022.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-vela')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/producto 3.avif" alt="Taza floral personalizada para regalo.">
+            <div class="product-body">
+              <span class="tag">celular</span>
+              <h3>celulares android al mismo precio cada 1</h3>
+              <p class="price">$7,199 MXN</p>
+              <p class="description">todos los telefonos de la imagen seminuevos cada 1 al mismo precio con posibilidad de elección</p>
+              <button type="button" class="btn card" onclick="openModal('modal-taza')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/producto 4.avif" alt="Suculentas decorativas envueltas para regalo.">
+            <div class="product-body">
+              <span class="tag">Tableta</span>
+              <h3>Ipad decima generación</h3>
+              <p class="price">$6,099 MXN</p>
+              <p class="description">Ipad reutilizada del 2022</p>
+              <button type="button" class="btn card" onclick="openModal('modal-jardin')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/producto 5.avif" alt="Regalos y postres coloridos para celebración de cumpleaños.">
+            <div class="product-body">
+              <span class="tag">tableta</span>
+              <h3>ipad 11 con apple pencil</h3>
+              <p class="price">$9,999 MXN</p>
+              <p class="description">Ipad con apple pencil seminuevos del 2023.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-kit')">Ver producto</button>
+            </div>
+          </article>
+          <article class="product-card reveal">
+            <img src="img/producto 6.avif" alt="Tarjetas elegantes decoradas con flores secas y lavanda.">
+            <div class="product-body">
+              <span class="tag">tableta</span>
+              <h3>Ipad Pro</h3>
+              <p class="price">11,199 MXN</p>
+              <p class="description">Ipad pro seminueva del 2024.</p>
+              <button type="button" class="btn card" onclick="openModal('modal-tarjeta')">Ver producto</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
